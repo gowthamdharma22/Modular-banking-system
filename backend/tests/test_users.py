@@ -1,7 +1,7 @@
 # backend/tests/test_users.py
 
 from fastapi.testclient import TestClient
-from backend.app.main import app # Go up one level (from tests/ to backend/) and import main # Your main FastAPI application instance
+from app.main import app # Go up one level (from tests/ to backend/) and import main # Your main FastAPI application instance
 
 # 1. Initialize the Test Client
 client = TestClient(app)
