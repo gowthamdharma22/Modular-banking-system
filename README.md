@@ -105,27 +105,9 @@ Implements authentication, role-based access, account management, and transactio
 
 ---
 
-## 📁 Project Structure
+# 🧑‍💻 Author
 
-backend/
-├── app/
-│   ├── main.py                  # FastAPI app entry point
-│   ├── api/
-│   │   └── v1/
-│   │       └── routes/
-│   │           ├── auth.py      # Authentication routes
-│   │           ├── accounts.py  # Account management routes
-│   │           └── admin.py     # Admin role routes
-│   ├── db/
-│   │   ├── database.py          # Database connection
-│   │   ├── models.py            # SQLAlchemy models
-│   │   └── schemas.py           # Pydantic schemas
-│   ├── core/
-│   │   ├── security.py          # JWT and password hashing
-│   │   └── config.py            # Environment and settings
-├── tests/
-│   ├── test_auth.py
-│   ├── test_accounts.py
-│   └── test_transactions.py
-├── requirements.txt              # Dependencies
-└── README.md                     # Project documentation
+**Karthick R**  
+
+Developed for **HCL Hackathon 2025**
+
