@@ -165,3 +165,14 @@ def transfer_money(db: Session, user_id: int, from_account_id: int, to_account_n
     
 def get_accounts_by_user(db: Session, user_id: int):
     return db.query(models.Account).filter(models.Account.user_id == user_id).all()
+
+def get_account_balance(db: Session, user_id: int, account_id: int):
+    account = db.query(models.Account).filter(
+        models.Account.id == account_id,
+        models.Account.user_id == user_id
+    ).first()
+
+    if not account:
+        raise ValueError("Account not found")
+
+    return account
